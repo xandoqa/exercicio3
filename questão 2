@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+    setlocale(LC_ALL, "Portuguese"); 
+    
+    float salario;
+    float salario_minimo = 1100.0;
+    
+    printf("Digite o seu salário: ");
+    scanf("%f", &salario);
+    
+    if (salario > salario_minimo) {
+        printf("O salário é maior que o mínimo.\n");
+    } else {
+        printf("O salário é igual ou menor que o mínimo.\n");
+    }
+    
+}
